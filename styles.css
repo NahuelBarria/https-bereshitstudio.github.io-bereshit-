@@ -1,0 +1,58 @@
+:root {
+  --orange: #ff6a00;
+  --bg: #0b0b0b;
+  --white: #f5f5f5;
+}
+
+body {
+  background: var(--bg);
+  color: var(--white);
+  font-family: 'Outfit', sans-serif;
+  margin: 0;
+  cursor: none;
+}
+
+/* Logo */
+.nav-logo {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.8rem;
+  color: white;
+}
+
+.nav-logo span {
+  color: var(--orange);
+}
+
+/* Hero */
+#hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.brand {
+  font-family: 'Pacifico';
+  font-size: 5rem;
+}
+
+.brand span {
+  color: var(--orange);
+}
+
+/* Cursor */
+#cursor {
+  width: 14px;
+  height: 14px;
+  background: var(--orange);
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
+
+#cursor.hover {
+  width: 30px;
+  height: 30px;
+}
