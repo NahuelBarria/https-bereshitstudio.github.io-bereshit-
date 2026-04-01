@@ -30,8 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     // Portfolio images
-    const postImg = document.getElementById('img-post');
-    const histImg = document.getElementById('img-historia');
+
     if (postImg) postImg.src = brand.post_image;
     if (histImg) histImg.src = brand.historia_image;
 
