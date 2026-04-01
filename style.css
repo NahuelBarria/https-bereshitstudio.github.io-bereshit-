@@ -185,11 +185,11 @@ nav.scrolled .nav-logo img { height: 38px; }
 }
 .hero-tagline {
   font-size: clamp(1rem, 2.5vw, 1.25rem);
-  color: var(--grey); font-weight: 300;
+  color: var(--white); font-weight: 600;
   margin-bottom: 2.6rem;
   animation: fadeUp 0.7s 0.2s ease both;
 }
-.hero-tagline strong { color: var(--white); font-weight: 600; }
+.hero-tagline strong { color: var(--grey); font-weight: 600; }
 .hero-actions {
   display: flex; gap: 1rem;
   justify-content: center; flex-wrap: wrap;
