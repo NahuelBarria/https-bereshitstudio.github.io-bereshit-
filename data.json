@@ -1,0 +1,77 @@
+{
+  "brand": {
+    "name": "Bereshit!",
+    "tagline": "Diseño Gráfico · Mantenimiento de PC · Páginas Web",
+    "badge": "Disponible para proyectos",
+    "hero_sub": "No necesitás buscar en 3 lugares distintos. Acá tenés todo.",
+    "logo_dark": "Logo-Fondo-Negro.png",
+    "logo_light": "Logo-Fondo-Blanco.png",
+    "post_image": "Post-Bereshit.png",
+    "historia_image": "Historia-Bereshit.png"
+  },
+  "contact": {
+    "whatsapp": "549XXXXXXXXXX",
+    "instagram": "bereshit",
+    "email": "bereshit@gmail.com"
+  },
+  "services": [
+    {
+      "icon": "🎨",
+      "status": "active",
+      "status_label": "Disponible",
+      "title": "Diseño Gráfico",
+      "desc": "Identidad visual que comunica, diferencia y perdura. Desde logos hasta piezas para redes sociales.",
+      "items": [
+        "Logos e identidad de marca",
+        "Posts y stories para RRSS",
+        "Tarjetas y papelería",
+        "Estampados y merchandising",
+        "Banners y flyers"
+      ]
+    },
+    {
+      "icon": "🖥️",
+      "status": "active",
+      "status_label": "Disponible",
+      "title": "Mantenimiento de PC",
+      "desc": "Hardware y software bajo control. Diagnóstico, limpieza, reparación y optimización de tu equipo.",
+      "items": [
+        "Limpieza de hardware",
+        "Cambio de pasta térmica",
+        "Instalación de SO y drivers",
+        "Eliminación de virus y malware",
+        "Upgrades y ampliación de RAM/SSD"
+      ]
+    },
+    {
+      "icon": "🌐",
+      "status": "coming",
+      "status_label": "Próximamente",
+      "title": "Páginas Web",
+      "desc": "Sitios a medida con diseño profesional, rápidos y optimizados. Pronto disponible para tu negocio.",
+      "items": [
+        "Landing pages de alto impacto",
+        "Tiendas online",
+        "Portfolios y sitios corporativos",
+        "Diseño responsive / mobile-first"
+      ]
+    }
+  ],
+  "why": [
+    {
+      "num": "01",
+      "title": "Solución completa",
+      "desc": "Diseño, tecnología y web en un mismo equipo. Sin intermediarios, sin vueltas."
+    },
+    {
+      "num": "02",
+      "title": "Atención directa",
+      "desc": "Hablás con quien hace el trabajo. Feedback inmediato y comunicación clara."
+    },
+    {
+      "num": "03",
+      "title": "Calidad sin vueltas",
+      "desc": "Entregamos resultados que se ven bien, funcionan y representan tu marca."
+    }
+  ]
+}
