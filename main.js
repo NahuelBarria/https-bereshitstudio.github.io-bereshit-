@@ -27,7 +27,15 @@ document.addEventListener('DOMContentLoaded', () => {
   function buildPage(data) {
     const { brand, contact, services, why } = data;
 
-
+    // Logos
+    document.querySelectorAll('[data-logo="dark"]').forEach(el => {
+      el.src = brand.logo_dark;
+      el.alt = brand.name;
+    });
+    document.querySelectorAll('[data-logo="light"]').forEach(el => {
+      el.src = brand.logo_light;
+      el.alt = brand.name;
+    });
 
     // Portfolio images
     const postImg = document.getElementById('img-post');
