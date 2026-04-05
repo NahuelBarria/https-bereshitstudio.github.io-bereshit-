@@ -1,198 +1,246 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Bereshit — Diseño Gráfico, Mantenimiento de PC y próximamente Páginas Web. Todo tu proyecto en un solo lugar." />
+  <meta name="description"
+    content="Bereshit — Diseño Gráfico, Mantenimiento de PC y próximamente Páginas Web. Todo tu proyecto en un solo lugar." />
   <title>Bereshit — Diseño & Tecnología</title>
-  <link rel="stylesheet" href="style.css" />
   <link rel="icon" type="image/png" href="Images/Logo-Fondo-Blanco.png" />
-
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-<!-- ── Custom cursor ── -->
-<div id="cursor"></div>
+  <!-- ── Custom cursor ── -->
+  <div id="cursor"></div>
 
-<!-- ── Floating rocket ── -->
-<a href="#hero" id="rocketBtn" title="Volver arriba">🚀</a>
+  <!-- ── Floating rocket ── -->
+  <a href="#hero" id="rocketBtn" title="Volver arriba">🚀</a>
 
-<!-- ════════════════════════════════════════
+  <!-- ════════════════════════════════════════
      NAV
 ═════════════════════════════════════════ -->
-<nav>
-  <a href="#hero" class="nav-logo">
-    <img data-logo="dark" src="Images/Logo-Fondo-Blanco.png" alt="Bereshit" />
-  </a>
-  <ul class="nav-links">
-    <li><a href="#servicios">Servicios</a></li>
-    <li><a href="#portfolio">Portafolio</a></li>
-    <li><a href="#por-que">Nosotros</a></li>
-    <li>
-      <a href="#contacto" class="nav-cta" id="nav-cta">Contacto</a>
-    </li>
-  </ul>
-</nav>
+  <nav>
+    <a href="#hero" class="nav-logo">
+      <img data-logo="dark" src="Images/Logo-Fondo-Blanco.png" alt="Bereshit" />
+    </a>
+    <ul class="nav-links">
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#por-que">Nosotros</a></li>
+      <li>
+        <a href="#contacto" class="nav-cta" id="nav-cta">Contacto</a>
+      </li>
+    </ul>
+  </nav>
 
-<!-- ════════════════════════════════════════
+  <!-- ════════════════════════════════════════
      HERO
 ═════════════════════════════════════════ -->
+  <section id="hero">
+    <!-- Particle canvas -->
+    <canvas id="hero-canvas"></canvas>
 
+    <!-- Animated orange beam top -->
+    <div class="hero-beam"></div>
 
-<section id="hero">
-  <div class="hero-bg"></div>
-  <div class="hero-grid"></div>
+    <div class="hero-split">
 
-  <div class="hero-content">
-    <div class="hero-badge">
-      <span class="dot"></span>
-      Disponible para proyectos
+      <!-- LEFT: Text -->
+      <div class="hero-left">
+        <div class="hero-badge">
+          <span class="dot"></span>
+          Disponible para proyectos
+        </div>
+
+        <h1 class="hero-headline">
+          <span class="line-1">Tu proyecto.</span>
+          <span class="line-2">Nuestro <em>arte.</em></span>
+        </h1>
+
+        <div class="hero-typewriter">
+          Somos expertos en&nbsp;<span id="tw-word"></span><span class="tw-cursor">|</span>
+        </div>
+
+        <p class="hero-sub">
+          Diseño gráfico, tecnología y web en un solo lugar.<br />
+          Sin vueltas — con resultados.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#contacto" class="btn-primary">✉️ Escribinos y arrancamos</a>
+          <a href="#servicios" class="btn-ghost">Ver servicios →</a>
+        </div>
+
+        <div class="hero-trust">
+          <span class="trust-item"><span class="trust-dot"></span>Diseño Gráfico</span>
+          <span class="trust-sep">·</span>
+          <span class="trust-item"><span class="trust-dot"></span>Mantenimiento PC</span>
+          <span class="trust-sep">·</span>
+          <span class="trust-item trust-coming"><span class="trust-dot coming"></span>Páginas Web pronto</span>
+        </div>
+      </div>
+
+      <!-- RIGHT: Logo visual -->
+      <div class="hero-right">
+        <div class="hero-logo-wrap">
+          <div class="logo-ring ring-1"></div>
+          <div class="logo-ring ring-2"></div>
+          <div class="logo-ring ring-3"></div>
+          <div class="logo-glow"></div>
+          <img class="hero-logo-img" src="Images/Logo-Fondo-Blanco.png" alt="Bereshit" />
+          <!-- Floating sparks -->
+          <span class="spark s1">✦</span>
+          <span class="spark s2">◆</span>
+          <span class="spark s3">✦</span>
+          <span class="spark s4">◆</span>
+          <span class="spark s5">✦</span>
+        </div>
+      </div>
+
+    </div><!-- /hero-split -->
+
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      Scroll
     </div>
+  </section>
 
-    <p class="hero-tagline" id="hero-tagline">
-      Diseño Gráfico · Mantenimiento de PC · <strong>Páginass Web</strong>
-    </p>
-
-    <div class="hero-actions">
-      <a href="#contacto" class="btn-primary">✉️ Escribinos y arrancamos</a>
-      <a href="#servicios" class="btn-ghost">Ver servicios →</a>
-    </div>
-  </div>
-
-  <div class="hero-scroll">
-    <div class="scroll-line"></div>
-    Scroll
-  </div>
-</section>
-
-<!-- ════════════════════════════════════════
+  <!-- ════════════════════════════════════════
      SERVICIOS
 ═════════════════════════════════════════ -->
-<section id="servicios">
-  <div class="container">
-    <p class="section-label reveal">Lo que hacemos</p>
-    <h2 class="section-title reveal">Todo lo que tu<br/>proyecto necesita</h2>
-    <div class="divider reveal"></div>
-    <p class="section-sub reveal">No necesitás buscar en 3 lugares distintos. Acá tenés todo.</p>
+  <section id="servicios">
+    <div class="container">
+      <p class="section-label reveal">Lo que hacemos</p>
+      <h2 class="section-title reveal">Todo lo que tu<br />proyecto necesita</h2>
+      <div class="divider reveal"></div>
+      <p class="section-sub reveal">No necesitás buscar en 3 lugares distintos. Acá tenés todo.</p>
 
-    <!-- Cards populated by main.js from data.json -->
-    <div class="services-grid" id="services-grid"></div>
-  </div>
-</section>
+      <!-- Cards populated by main.js from data.json -->
+      <div class="services-grid" id="services-grid"></div>
+    </div>
+  </section>
 
-<!-- ════════════════════════════════════════
+  <!-- ════════════════════════════════════════
      PORTFOLIO PREVIEW
 ═════════════════════════════════════════ -->
-<section id="portfolio">
-  <div class="container">
-    <p class="section-label reveal">Trabajos</p>
-    <h2 class="section-title reveal">Algo de lo que<br/>hacemos</h2>
-    <div class="divider reveal"></div>
+  <section id="portfolio">
+    <div class="container">
+      <p class="section-label reveal">Trabajos</p>
+      <h2 class="section-title reveal">Algo de lo que<br />hacemos</h2>
+      <div class="divider reveal"></div>
 
-    <div class="portfolio-grid">
+      <div class="portfolio-grid">
 
-      <div class="port-card tall reveal">
-        <img id="img-historia" src="Images/Historia-Bereshit.png" alt="Historia Bereshit" loading="lazy" />
-        <div class="port-overlay"><span>Historia / Story</span></div>
+        <div class="port-card tall reveal">
+          <img id="img-historia" src="Images/Historia-Bereshit.png" alt="Historia Bereshit" loading="lazy" />
+          <div class="port-overlay"><span>Historia / Story</span></div>
+        </div>
+
+        <div class="port-card reveal">
+          <img id="img-post" src="Images/Post-Bereshit.png" alt="Post Bereshit" loading="lazy" />
+          <div class="port-overlay"><span>Post cuadrado</span></div>
+        </div>
+
+        <div class="port-card reveal"
+          style="background:var(--bg2);display:flex;align-items:center;justify-content:center;min-height:220px;">
+          <img data-logo="light" src="Images/Logo-Fondo-Negro.png" alt="Logo Bereshit" loading="lazy"
+            style="padding:2rem;max-height:180px;width:auto;object-fit:contain;background:#fff;border-radius:12px;" />
+          <div class="port-overlay"><span>Logo — fondo blanco</span></div>
+        </div>
+
       </div>
-
-      <div class="port-card reveal">
-        <img id="img-post" src="Images/Post-Bereshit.png" alt="Post Bereshit" loading="lazy" />
-        <div class="port-overlay"><span>Post cuadrado</span></div>
-      </div>
-
-      <div class="port-card reveal" style="background:var(--bg2);display:flex;align-items:center;justify-content:center;min-height:220px;">
-        <img data-logo="light" src="Images/Logo-Fondo-Negro.png" alt="Logo Bereshit fondo blanco" loading="lazy"
-          style="padding:2rem;max-height:180px;width:auto;object-fit:contain;background:#fff;border-radius:12px;" />
-        <div class="port-overlay"><span>Logo — fondo blanco</span></div>
-      </div>
-
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ════════════════════════════════════════
+  <!-- ════════════════════════════════════════
      POR QUÉ BERESHIT
 ═════════════════════════════════════════ -->
-<section id="por-que">
-  <div class="container">
-    <div class="why-grid">
+  <section id="por-que">
+    <div class="container">
+      <div class="why-grid">
 
-      <div>
-        <p class="section-label reveal">¿Por qué elegirnos?</p>
-        <h2 class="section-title reveal">Un solo lugar.<br/>Todo resuelto.</h2>
-        <div class="divider reveal"></div>
-        <!-- Items populated by main.js -->
-        <div class="why-items" id="why-items"></div>
-      </div>
-
-      <div class="why-visual reveal">
-        <div class="big-num">3</div>
-        <div class="big-label">servicios en uno</div>
-        <div class="stats">
-          <div class="stat-box">
-            <div class="stat-val">🚀</div>
-            <div class="stat-key">Rápido</div>
-          </div>
-          <div class="stat-box">
-            <div class="stat-val">💡</div>
-            <div class="stat-key">Creativo</div>
-          </div>
-          <div class="stat-box">
-            <div class="stat-val">🛠️</div>
-            <div class="stat-key">Técnico</div>
-          </div>
+        <div>
+          <p class="section-label reveal">¿Por qué elegirnos?</p>
+          <h2 class="section-title reveal">Un solo lugar.<br />Todo resuelto.</h2>
+          <div class="divider reveal"></div>
+          <!-- Items populated by main.js -->
+          <div class="why-items" id="why-items"></div>
         </div>
-        <p class="why-quote">
-          "No necesitás buscar en 3 lugares distintos.<br/>Acá tenés todo."
-        </p>
+
+        <div class="why-visual reveal">
+          <div class="big-num">3</div>
+          <div class="big-label">servicios en uno</div>
+          <div class="stats">
+            <div class="stat-box">
+              <div class="stat-val">🚀</div>
+              <div class="stat-key">Rápido</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-val">💡</div>
+              <div class="stat-key">Creativo</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-val">🛠️</div>
+              <div class="stat-key">Técnico</div>
+            </div>
+          </div>
+          <p class="why-quote">
+            "No necesitás buscar en 3 lugares distintos.<br />Acá tenés todo."
+          </p>
+        </div>
+
       </div>
-
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ════════════════════════════════════════
+  <!-- ════════════════════════════════════════
      CONTACTO
 ═════════════════════════════════════════ -->
-<section id="contacto">
-  <div class="container">
-    <div class="contact-inner reveal">
+  <section id="contacto">
+    <div class="container">
+      <div class="contact-inner reveal">
 
-      <div class="contact-logo">
-        <img data-logo="dark" src="Images/Logo-Fondo-Blanco.png" alt="Bereshit" />
+        <div class="contact-logo">
+          <img data-logo="dark" src="Images/Logo-Fondo-Blanco.png" alt="Bereshit" />
+        </div>
+
+        <h2>¿<span>Arrancamos</span>?</h2>
+        <p>Contanos tu proyecto y lo hacemos realidad.<br />Diseño, PC o web — estamos para ayudarte.</p>
+
+        <div class="contact-channels">
+          <a href="https://wa.me/542945422015?text=Hola!%20Quiero%20info%20sobre%20tus%20servicios%20🚀"
+            class="channel-btn channel-wa" target="_blank" rel="noopener">
+            💬 WhatsApp
+          </a>
+
+          <a href="https://instagram.com/bereshit_studiodesign" class="channel-btn channel-ig" target="_blank" rel="noopener">
+            📸 Instagram
+          </a>
+
+          <a href="bereshitstudiodesign@gmail.com" class="channel-btn channel-mail">
+            ✉️ Email
+          </a>
+        </div>
+
       </div>
-
-      <h2>¿<span>Arrancamos</span>?</h2>
-      <p>Contanos tu proyecto y lo hacemos realidad.<br/>Diseño, PC o web — estamos para ayudarte.</p>
-
-      <div class="contact-channels">
-        <a href="#" id="btn-wa" class="channel-btn channel-wa" target="_blank" rel="noopener">
-          💬 WhatsApp
-        </a>
-        <a href="#" id="btn-ig" class="channel-btn channel-ig" target="_blank" rel="noopener">
-          📸 Instagram
-        </a>
-        <a href="#" id="btn-mail" class="channel-btn channel-mail">
-          ✉️ Email
-        </a>
-      </div>
-
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ════════════════════════════════════════
+  <!-- ════════════════════════════════════════
      FOOTER
 ═════════════════════════════════════════ -->
-<footer>
-  <div class="footer-logo">
-    <img data-logo="dark" src="Images/Logo-Fondo-Blanco.png" alt="Bereshit" />
-  </div>
-  <p>Diseño Gráfico · Mantenimiento de PC · Páginas Web</p>
-  <p>Hecho con 🧡 &mdash; <a href="#contacto">Contacto</a></p>
-</footer>
+  <footer>
+    <div class="footer-logo">
+      <img data-logo="dark" src="Images/Logo-Fondo-Blanco.png" alt="Bereshit" />
+    </div>
+    <p>Diseño Gráfico · Mantenimiento de PC · Páginas Web</p>
+    <p>Hecho con 🧡 &mdash; <a href="#contacto">Contacto</a></p>
+  </footer>
 
-<script src="main.js"></script>
+  <script src="main.js"></script>
 </body>
+
 </html>
