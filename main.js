@@ -9,7 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
       buildPage(data);
       initCanvas();
       initTypewriter();
-      initCursor();
       initScrollReveal();
       initNavScroll();
       initRocketBtn();
@@ -18,7 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
       console.error("Error loading data.json:", err);
       initCanvas();
       initTypewriter();
-      initCursor();
       initScrollReveal();
       initNavScroll();
       initRocketBtn();
@@ -248,18 +246,6 @@ document.addEventListener("DOMContentLoaded", () => {
     setTimeout(tick, 1400);
   }
 
-  // ── Custom cursor ───────────────────────────────────────────────
-  function initCursor() {
-    const cursor = document.getElementById("cursor");
-    if (!cursor) return;
-    document.addEventListener("mousemove", (e) => {
-      cursor.style.left = e.clientX + "px";
-      cursor.style.top = e.clientY + "px";
-    });
-    document.addEventListener("mouseover", (e) => {
-      cursor.classList.toggle("hover", !!e.target.closest("a, button"));
-    });
-  }
 
   // ── Scroll reveal ───────────────────────────────────────────────
   function initScrollReveal() {
